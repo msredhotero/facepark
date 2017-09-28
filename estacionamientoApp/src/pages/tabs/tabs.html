@@ -1,0 +1,13 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/parking.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+<ion-tabs>
+    <ion-tab [root]="inicioRoot" tabTitle="Inicio" tabIcon="home"></ion-tab>
+    <ion-tab [root]="estacionamientoRoot" tabTitle="Estacionamiento" tabIcon="pin"></ion-tab>
+    <ion-tab [root]="estadoRoot" tabTitle="Estado" tabIcon="locate"></ion-tab>
+</ion-tabs>
